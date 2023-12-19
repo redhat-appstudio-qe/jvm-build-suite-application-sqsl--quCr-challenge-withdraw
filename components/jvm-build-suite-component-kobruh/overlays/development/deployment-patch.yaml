@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-kobruh
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/jvm-build-ofwz-tenant/jvm-build-suite-application-sqsl/jvm-build-suite-component-kobruh@sha256:e001d495adcdec8b7d6dff015ddbf4a5a8cdfeb27c609fe738ec940136a18117
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
